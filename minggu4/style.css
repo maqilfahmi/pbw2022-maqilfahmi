@@ -1,0 +1,14 @@
+table{
+    width: 50%;
+}
+
+.terahir{
+    align : left;
+}
+
+body{
+  height: 100vh;
+  padding: 10px;
+  background: linear-gradient(135deg, #71b7e6, #9b59b6);
+}
+
