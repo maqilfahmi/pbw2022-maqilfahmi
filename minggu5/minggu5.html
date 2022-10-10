@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="=Halaman Latihan Semantic HTML 5">
+    <meta name="keywords" content="HTML, CSS , JavaSricpt">
+    <meta name="author" content="Muhammad Aqil Fahmi">
+    <meta name="viewport" content="width=device-width, intial scale.0">
+    <title>Semantic Element HTML</title>
+</head>
+<body>
+    <style>
+        body {
+          background-color: rgb(6, 53, 80);
+          background: linear-gradient(to right, #cc5333, #23074d);
+        }
+
+        h1 {
+          color: skyblue;
+          text-align: center;
+        }
+        
+        h2 {
+          color: rgb(227, 115, 23);
+          text-align: center;
+        }
+    </style>
+    <form action="/action_page.php">
+    <h1>Welcome To MY SITE</h1>
+     <details>
+  <summary>Epcot Center</summary>
+  <p>java</p>
+    </details>
+
+    <main>
+        <header>
+          <h2>Hewan Lucu</h2>
+        </header>
+        <nav style="background-color: slateblue">
+        <aside>
+            <ul>
+                <a href="Kucing imut dan lucu">Home</a>
+                <a href="Jika ingin memesan hubungi contact yang ada">About</a>
+                <a href="0856949473922">Contact</a>
+            </ul>
+        </aside>
+        </nav>
+        <style>
+            .all-browsers {
+              margin: 0;
+              padding: 5px;
+              background-color: lightgray;
+            }
+            
+            .all-browsers > h1, .browser {
+              margin: 10px;
+              padding: 5px;
+            }
+            
+            .browser {
+              background: white;
+            }
+            
+            .browser > h2, p {
+              margin: 4px;
+              font-size: 90%;
+            }
+            </style>
+        
+            <article class="all-browsers">
+              <h1>Kucing Populer Di Indonesia</h1>
+              <article class="browser">
+                <h2>Kucing maincoon</h2>
+                <p>Kucing ini  diperkirakan merupakan hasil persilangan dari kucing berbulu panjang yang dibawa para pelaut Eropa dan bangsa Viking dengan kucing native yang sudah ada di Amerika sebelumnya</p>
+              </article>
+              <article class="browser">
+                <h2>Kucing Persia</h2>
+                <p>Kucing persia adalah ras kucing domestik berbulu panjang dengan karakter wajah bulat dan moncong pendek, kucing ini ditemukan pertama kali di Persia (sekarang Iran) dan di bawa ke Eropa pada tahun 1620-an. Hingga kini, kucing persia masih dijadikan hewan peliharaan yang populer</p>
+              </article>
+              <article class="browser">
+                <h2>Kucing Sphynix</h2>
+                <p>Kucing yang tampak keriput dan terkadang tampak aneh, dalam beberapa tahun terakhir popularitasnya meroket. Meski tanpa bulu, kucing-kucing ini memerlukan perawatan ekstra seperti mandi seminggu sekali untuk mengontrol produksi minyak.</p>
+              </article>
+              <p>
+                <button onclick="playVid()" type="button"> Play Video</button>
+                <button onclick="pauseVid()" type="button">Pause Video</button>
+                <button onclick="controlPlayVid()" type="button"> Controls ON</button>
+                <button onclick="controlPauseVid()" type="button"> Controls OFF</button>
+            </p>
+            <center>  
+              <video Id="myVideo">
+                <source src="kucing.mp4" type="video/mp4">
+                Video File Not Support
+            </video>
+            <video autoplay loop muted playsinline>
+                <source src="gif.mp4" type="video/mp4">
+                Video gif
+            </video>
+        </center>
+            <h3>Video Subtitle</h3>
+            <video controls>
+                <track src="Kucing.id.vtt" kind="Subtitle" srclang="id" label="Indonesia"/>
+            </video>
+            <h4>Video Dari Youtube</h4>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/H77rivAX_oA"></iframe> 
+            </article>
+            
+        <footer style="background-color: royalblue">
+              <i>Copyright & Copy</i>
+        </footer>
+        <audio controls>
+            <source src="no comment.mp3" type="audio/mp3">
+          </audio>
+    </main>
+  <label for="appt">Masukan Waktu:</label>
+  <input type="time" id="appt" name="appt">
+  <input type="submit">
+  <audio hidden autoplay loop>
+    <source src="8lettres.mp3" type="audio/mp3">
+    browser anda tidak mendukung tag audio
+  </audio>
+  <script>
+    var vid = document.getElementById("myVideo");
+
+function playVid() {
+    vid.play();
+}
+
+function pauseVid() {
+    vid.pause();
+}
+function controlsPlayVid() {
+    vid.controls = true;
+    vid.load();
+}
+function controlsPauseVid() {
+    vid.controls = false;
+    vid.load();
+}
+
+<h4>Video Dari Youtube</h4>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/H77rivAX_oA"></iframe>
+</script>
+</form>
+</body>
+</html>
