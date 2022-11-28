@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Menu Makanan</title>
+    <script>
+        alert('Selamat datang di rumah makan restu bundo');
+
+        var loop = true;
+
+        while(loop == true)
+        {
+            var nama = prompt('Masukan menu yang ingin dipesan : ');
+            alert('Halo pembeli' + nama + '!');
+
+            var pertanyaan = prompt('semoga suka ya dengan makanan yang telah kami sajikan');
+
+            loop = confine('kalo ada saran dan kritik silahkan sampaikan pada saat membayar nanti');
+            if(!loop)
+            {
+                continue;
+            }
+
+
+        }
+        alert('Terimakasih atas pesanannya semoga sehat selalu !!!');
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
